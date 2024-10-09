@@ -1,0 +1,28 @@
+.container {
+  max-width: var(--max-width-layout);
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+  background-color: var(--background-menu);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.content {
+  flex: 1;
+}
+
+.side-bar {
+  flex: 0;
+}
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .side-bar > div {
+    width: 100%;
+  }
+}

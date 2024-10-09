@@ -1,0 +1,59 @@
+:root {
+  --number-item-movie: 5;
+}
+
+.movielist {
+  display: grid;
+  grid-template-columns: repeat(var(--number-item-movie), 1fr);
+  gap: 20px;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 3rem;
+}
+
+.btn-more{
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  margin: 30px 0;
+  font-size: 1.8rem;
+  background-color: #161E21;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+  text-align: center;
+  font-weight: 500;
+
+  &:hover{
+    color: rgb(143, 143, 143);
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --number-item-movie: 4;
+  }
+}
+
+@media (max-width: 1020px) {
+  :root {
+    --number-item-movie: 3;
+  }
+}
+
+@media (max-width: 550px) {
+  :root {
+    --number-item-movie: 2;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}

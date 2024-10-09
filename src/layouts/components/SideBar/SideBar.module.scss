@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+// css box movie
+.movie-container {
+  background-color: #181d1f;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.distance-movie-item .lst-movie {
+  gap: 10px;
+}
+
+.title-box {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 1.4rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #b5e745;
+    height: 3px;
+    width: 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #696969;
+    opacity: 0.2;
+  }
+}
+
+.lst-movie {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-item {
+  padding: 7px 6px 7px 5px;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #171515;
+  font-size: 1.4rem;
+
+  &:hover {
+    border-left: 5px solid #be3232;
+  }
+
+  &:hover h4 {
+    color: #fff;
+  }
+}
